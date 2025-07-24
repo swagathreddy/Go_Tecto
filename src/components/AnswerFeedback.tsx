@@ -6,13 +6,15 @@ interface AnswerFeedbackProps {
   explanation: string;
   referenceUrl?: string;
   referenceLabel?: string;
+  credit?: string; 
 }
 
 const AnswerFeedback: React.FC<AnswerFeedbackProps> = ({
   isCorrect,
   explanation,
   referenceUrl,
-  referenceLabel
+  referenceLabel,
+  credit
 }) => {
   // Extract image path if embedded in explanation string (format: [Image: image_url])
   const imageMatch = explanation.match(/\[Image:\s*(.*?)\]/);
@@ -103,12 +105,15 @@ const AnswerFeedback: React.FC<AnswerFeedbackProps> = ({
 
             {/* Show image only if answer is correct and image is embedded */}
             {isCorrect && imageMatch && (
-              <img
-                src={imageMatch[1]}
-                alt="Explanation visual"
-                className="mt-4 rounded-md w-full h-auto shadow-sm"
-              />
-            )}
+            <img
+              src={imageMatch[1]}
+              alt="Explanation visual"
+              className="mt-4 rounded-md w-full h-auto"
+            />
+          )}
+
+
+
           </div>
         </div>
 

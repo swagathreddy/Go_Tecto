@@ -100,6 +100,6 @@ This tectonic interaction is the driving force behind Indonesia’s intense volc
     ],
     correctAnswer: 2,
     explanation: "Stress builds when two plates move against each other. As one gives way, the resulting fault or crack triggers earthquakes. In Sumatra-Andaman 2004 earthquake, a 1450 kilometer long (900 miles) fault due to plate interaction between the India plate and Burma micro-plate, part of the larger Sunda plate unleashed a deadly magnitude 9.1 earthquake and tsunami.",
-   
+    credit: "NOAA Center for Tsunami Research (NCTR)"
   }
 ];

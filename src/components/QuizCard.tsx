@@ -84,6 +84,11 @@ const QuizCard: React.FC<QuizCardProps> = ({
               className="mx-auto max-w-full h-auto rounded-lg shadow-md border-2 border-[#79E4FF]"
               style={{ maxHeight: '300px' }}
             />
+            {question.credit && (
+      <p className="text-xs text-gray-500 mt-1">
+        Image credit: {question.credit}
+      </p>
+    )}
           </div>
 
           {/* Wrong Answer Message */}
@@ -120,6 +125,8 @@ const QuizCard: React.FC<QuizCardProps> = ({
   explanation={question.explanation}
   referenceUrl={question.referenceUrl}
   referenceLabel="Read more about this topic"
+  credit={question.credit}
+
 />
 
       )}

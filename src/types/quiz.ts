@@ -5,6 +5,6 @@ export interface QuizQuestion {
   options: string[];
   correctAnswer: number;
   explanation: string;
-
   referenceUrl?: string;
+  credit?: string; 
 }
